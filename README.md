@@ -34,4 +34,4 @@ Sistemin temelini oluşturan varlıklar arasındaki ilişkiler (ER Diyagramı) a
 2. `npm start` ile uygulamayı ayağa kaldırın.
 
 ---
-*Bu proje üniversite bitirme/staj hazırlık süreci kapsamında, kurumsal yazılım standartları gözetilerek geliştirilmiştir.*
+

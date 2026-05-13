@@ -1,37 +1,36 @@
-# 🎫 Müşteri Destek ve Bilet Takip Sistemi (Helpdesk Management)
+🎫 Helpdesk & Ticket Management System
+This is a Full-Stack Management System developed for corporate needs, enabling users to create support tickets and allowing administrators to filter and respond to these requests efficiently.
 
-Bu proje, kurumsal ihtiyaçlara yönelik geliştirilmiş, kullanıcıların destek talepleri (bilet) oluşturabildiği, yöneticilerin ise bu talepleri filtreleyip yanıtlayabildiği tam yığın (full-stack) bir yönetim sistemidir.
+✨ Key Features
+Role-Based Access Control (RBAC): Customized dashboards and authorization for Admin and Customer roles.
 
-## ✨ Öne Çıkan Özellikler
+Smart Ticket Management: Dynamic filtering of requests based on status (Open/Closed) and priority levels (Low, Medium, High).
 
-* **Rol Tabanlı Yetkilendirme:** Admin ve Müşteri rolleri için özelleştirilmiş dashboard ve yetki kontrolleri.
-* **Akıllı Bilet Yönetimi:** Taleplerin durum (Açık/Kapalı) ve öncelik (Düşük, Orta, Yüksek) seviyelerine göre dinamik filtrelenmesi.
-* **Otomatik E-posta Bildirimleri (SMTP):** Şifre sıfırlama işlemleri ve bilet yanıtlarında kullanıcılara JavaMailSender ile otomatik e-posta gönderimi.
-* **Müşteri Memnuniyet Analizi (CSAT):** Çözülen biletlerin ardından müşterilerin hizmeti 5 yıldız üzerinden değerlendirebildiği interaktif feedback sistemi.
-* **Gelişmiş Güvenlik ve UI:** Gerçek zamanlı şifre gücü analizi, responsive (mobil uyumlu) modern arayüz ve kullanıcı dostu navigasyon modeli.
+Automated Email Notifications (SMTP): Automatic email delivery using JavaMailSender for password resets and ticket updates.
 
-## 🛠️ Teknik Stack
+Customer Satisfaction Analysis (CSAT): An interactive feedback system where customers can rate the service (1-5 stars) after ticket resolution.
 
-* **Frontend:** React.js, Bootstrap 5, Axios, React Router
-* **Backend:** Java 17, Spring Boot 3, Spring Data JPA
-* **Veritabanı:** MySQL (İlişkisel veritabanı mimarisi ve Foreign Key yönetimi)
-* **İletişim:** RESTful API ve SMTP Protokolü
+Enhanced Security & UI: Real-time password strength analysis, responsive (mobile-friendly) modern interface, and user-centric navigation.
 
-## 📊 Veritabanı Mimarisi
+🛠️ Tech Stack
+Frontend: React.js, Bootstrap 5, Axios, React Router
 
-Sistemin temelini oluşturan varlıklar arasındaki ilişkiler (ER Diyagramı) aşağıdaki yapı üzerine kurulmuştur:
+Backend: Java 17, Spring Boot 3, Spring Data JPA
 
+Database: MySQL (Relational architecture with Foreign Key management)
 
+Communication: RESTful API & SMTP Protocol
 
-## 🚀 Kurulum ve Çalıştırma
+📊 Database Architecture
+The system is built on a structured ER Diagram managing relationships between users, tickets, and feedback entities.
 
-### Arka Yüz (Backend)
-1. `src/main/resources/application.properties` dosyasındaki MySQL kullanıcı adı ve şifrenizi güncelleyin.
-2. Projeyi Maven ile derleyin ve çalıştırın.
+🚀 Installation & Setup
+Backend
+Update your MySQL credentials in src/main/resources/application.properties.
 
-### Ön Yüz (Frontend)
-1. Terminalde `npm install` komutu ile bağımlılıkları yükleyin.
-2. `npm start` ile uygulamayı ayağa kaldırın.
+Build and run the project using Maven.
 
----
+Frontend
+Navigate to the frontend directory and run npm install to install dependencies.
 
+Launch the application with npm start.
